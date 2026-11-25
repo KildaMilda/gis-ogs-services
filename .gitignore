@@ -1,0 +1,22 @@
+# === Исходные геоданные (тяжёлые файлы в Git не коммитим) ===
+data/raw/*
+!data/raw/.gitkeep
+
+# === Локальные тома Docker / GeoServer ===
+deploy/geoserver_data/
+
+# === Секреты и логи ===
+.env
+*.log
+
+# === Python (на случай скриптов проверки/загрузки) ===
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# === Системный мусор Windows, IDE и самого Vim ===
+Thumbs.db
+Desktop.ini
+.vscode/
+*.swp
